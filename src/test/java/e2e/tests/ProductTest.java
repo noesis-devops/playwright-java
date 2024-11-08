@@ -45,6 +45,6 @@ public class ProductTest extends BaseE2E {
         productPage.filterBrand();
         productPage.filterType();
         productPage.applyFilter();
-        productPage.assertFilteredProduct(".NET BLACK & WHITE BUG");
+        productPage.assertFilteredProduct(".NET BLACK & WHITE mug");
     }
 }
