@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   test:
-    runs-on: SRVLD96
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
 
