@@ -9,8 +9,6 @@
 # 6. Build test report
 # 7. Publish test report
 
-
-
 name: CI and Deploy
 
 on: [push]
