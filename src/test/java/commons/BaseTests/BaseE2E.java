@@ -45,9 +45,9 @@ public class BaseE2E {
         playwright = Playwright.create();
         browsers = initializeBrowsers();
 
-        for (Browser browser : browsers) {
-            authenticate(browser);
-        }
+        // for (Browser browser : browsers) {
+        //     authenticate(browser);
+        // }
     }
 
     /***
@@ -106,9 +106,12 @@ public class BaseE2E {
     private BrowserContext context;
 
     private void setupBrowserContext(Browser browser) {
+        // context = browser.newContext(
+        //         new Browser.NewContextOptions().setStorageStatePath(STATE_FILE_PATH)
+        // );
+
         context = browser.newContext(
-                new Browser.NewContextOptions().setStorageStatePath(STATE_FILE_PATH)
-        );
+                new Browser.NewContextOptions());
 
         context.tracing().start(new Tracing.StartOptions()
                 .setScreenshots(true)

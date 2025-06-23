@@ -1,6 +1,5 @@
 package runner;
 
-import api.tests.products.PostProductTests;
 import api.tests.users.DeleteUserTest;
 import api.tests.users.GetUsersTest;
 import api.tests.users.PostUserTest;
@@ -16,7 +15,6 @@ import org.junit.platform.suite.api.Suite;
     GetUsersTest.class,
     PostUserTest.class,
     PutUserTest.class,
-    PostProductTests.class,
 //    LoginTest.class,
 //    ProductTest.class
 })

@@ -6,6 +6,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static commons.JsonData.getEnvironmentData;
@@ -17,6 +18,7 @@ import static io.qameta.allure.SeverityLevel.BLOCKER;
 class LoginTest extends BaseE2E {
 
     @Test
+    @Tag("regression")
     @DisplayName("Test login with valid data")
     @Severity(BLOCKER)
     void testLogin() {
@@ -29,6 +31,7 @@ class LoginTest extends BaseE2E {
     }
 
     @Test
+    @Tag("regression")
     @DisplayName("Test Authentication with invalid data")
     @Severity(BLOCKER)
     void testLoginInvalidData() {

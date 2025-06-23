@@ -13,12 +13,14 @@ import io.qameta.allure.SeverityLevel;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Feature("Users")
 public class GetUsersTest extends UsersPage {
 
   @Test
+  @Tag("API_Regression")
   @DisplayName("Get user by name")
   @Severity(SeverityLevel.CRITICAL)
   @Flaky

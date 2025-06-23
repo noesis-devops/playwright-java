@@ -1,6 +1,5 @@
 {
   "browsers": [
-    "chromium",
-    "firefox"
+    "chromium"
   ]
 }

@@ -8,12 +8,14 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Feature("Users")
 public class DeleteUserTest extends UsersPage {
 
   @Test
+  @Tag("API_Regression")
   @DisplayName("Delete user")
   @Severity(SeverityLevel.CRITICAL)
   void deleteUserSuccess() {
