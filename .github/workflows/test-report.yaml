@@ -1,5 +1,4 @@
 # This workflow will build a Playwright Java test project with Maven.
-
 # Steps
 # 1. Check out the repository
 # 2. Set up JDK 22
