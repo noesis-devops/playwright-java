@@ -20,7 +20,6 @@ import org.junit.jupiter.api.Test;
 public class GetUsersTest extends UsersPage {
 
   @Test
-  @Tag("API_Regression")
   @DisplayName("Get user by name")
   @Severity(SeverityLevel.CRITICAL)
   @Flaky
@@ -66,6 +65,7 @@ public class GetUsersTest extends UsersPage {
   }
 
   @Test
+  @Tag("API_Regression")
   @DisplayName("Try get user by invalid id")
   @Severity(SeverityLevel.NORMAL)
   void getUsersByInvalidId() {
