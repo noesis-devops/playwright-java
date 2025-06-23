@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   test:
-    runs-on: self-hosted
+    runs-on: windows-ra
     steps:
       - uses: actions/checkout@v4
 
