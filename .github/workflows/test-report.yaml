@@ -30,6 +30,12 @@ jobs:
 
       - name: Run tests regression
         run: mvn -B clean test -Dgroups=regression
+        
+      - name: Run tests end-to-end
+        run: mvn -B test -Dtest=e2e.page.ProductPage
+        
+      - name: Run tests end-to-end
+        run: mvn -B test -Dtest=e2e.page.ProductPage
 
       - name: Load test report history
         uses: actions/checkout@v4
