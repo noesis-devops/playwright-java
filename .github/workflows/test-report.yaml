@@ -34,9 +34,11 @@ jobs:
         run: mvn -q -B compile --file pom.xml
 
 
-      - name: Run tests
-        #run: mvn -B clean test
-        run: mvn -q -B clean test -PAPI
+      - name: Run tests Api Regression
+        run: mvn -q -B clean test -Dgroups=API_Regression
+
+      - name: Run tests regression
+        run: mvn -q -B clean test -Dgroups=regression
 
       - name: Load test report history
         uses: actions/checkout@v4
