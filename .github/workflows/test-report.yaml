@@ -32,7 +32,7 @@ jobs:
         run: mvn -B clean test -Dgroups=regression
         
       - name: Run tests end-to-end
-        run: mvn -B test -Dtest="e2e.tests.LoginPage"
+        run: mvn -B test -Dtest="e2e.tests.LoginTest"
         
       - name: Run tests end-to-end
         run: mvn -B test -Dtest="e2e.tests.ProductPage"
