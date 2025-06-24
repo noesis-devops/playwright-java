@@ -24,19 +24,12 @@ jobs:
 
       - name: Build with Maven
         run: mvn -B compile --file pom.xml
-
-
-      - name: Run tests Api Regression
-        run: mvn -B clean test -Dgroups=API_Regression
-
-      - name: Run tests regression
-        run: mvn -B clean test -Dgroups=regression
         
-      - name: Run tests end-to-end
-        run: mvn -B test -Dtest="e2e.tests.LoginTest"
+      - name: Run tests Api Regression and Regression
+        run: mvn -B test -Dgroups="API_Regression,regression"
         
-      - name: Run tests end-to-end
-        run: mvn -B test -Dtest="e2e.tests.ProductTest"
+      - name: Run E2E tests (LoginTest and ProductTest)
+        run: mvn -B test -Dtest="e2e.tests.LoginTest,e2e.tests.ProductTest"
 
       - name: Load test report history
         uses: actions/checkout@v4
