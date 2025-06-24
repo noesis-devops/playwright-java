@@ -17,6 +17,11 @@ permissions:
   contents: write
 
 jobs:
+  build: 
+    runs-on: windows-ra
+    steps:
+      - name: Build Web Application
+        run: echo "Building Web Application"
   test:
     runs-on: windows-ra
     steps:
@@ -63,6 +68,8 @@ jobs:
           git push origin gh-pages
         shell: cmd
         
+  deploy: 
+    runs-on: windows-ra
+    steps:
       - name: Deploy Web Application
-        run: echo "Deploy Web Application"
-
+        run: echo "Building Web Application"
