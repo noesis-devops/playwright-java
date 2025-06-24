@@ -58,5 +58,5 @@ jobs:
           git add allure-results
           git commit -m "Update allure-results from run #${{ github.run_number }}"
           git push origin gh-pages
-        shell: bash
+        shell: pwsh
 
