@@ -36,7 +36,7 @@ jobs:
         run: mvn -B test -Dtest="e2e.tests.LoginTest"
         
       - name: Run tests end-to-end
-        run: mvn -B test -Dtest="e2e.tests.ProductPage"
+        run: mvn -B test -Dtest="e2e.tests.ProductTest"
 
       - name: Load test report history
         uses: actions/checkout@v4
