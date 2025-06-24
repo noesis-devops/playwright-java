@@ -80,6 +80,7 @@ public class ProductPage {
     public void assertFilteredProduct(String product) {
         page.locator(FILTERED_PRODUCT).isVisible();
         assertThat(page.locator(FILTERED_PRODUCT).innerText()).isEqualTo(product);
+        assertThat(locator.innerText()).isEqualToIgnoringCase(product);
     }
 
     @Step("Acessar homepage")
